@@ -1,0 +1,27 @@
+{
+  "name": "kc-cruizee-xmd",
+  "version": "1.0.0",
+  "description": "KC CRUIZEE XMD \u2014 a demo WhatsApp helper bot using Baileys, Express, and a video-background session generator UI.",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "express": "^4.19.2",
+    "qrcode": "^1.5.4",
+    "uuid": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "ws": "^8.17.1",
+    "gtts": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
