@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KC CRUIZEE XMD — Session Generator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="/assets/bg.mp4" type="video/mp4" />
+  </video>
+
+  <main class="container">
+    <div class="card">
+      <h1>KC CRUIZEE XMD</h1>
+      <p class="muted">Link your WhatsApp using a pairing code. No QR needed.</p>
+      <form id="pairForm">
+        <label for="phone">Your WhatsApp number (E.164, no plus)</label>
+        <input id="phone" type="tel" placeholder="2348012345678" required />
+        <button type="submit">Generate Pairing Code</button>
+      </form>
+
+      <div id="result" class="result hidden">
+        <p><strong>Session Code:</strong> <span id="sessionCode"></span></p>
+        <p><strong>Pairing Code:</strong> <span id="pairingCode"></span></p>
+        <ol class="howto">
+          <li>On your phone: WhatsApp → Settings → Linked devices.</li>
+          <li>Tap <em>Link a device</em> → choose <em>Link with phone number</em>.</li>
+          <li>Enter the pairing code shown above.</li>
+        </ol>
+        <p class="muted small">Keep the tab open for a minute while it links.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
